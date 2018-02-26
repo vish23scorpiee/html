@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<script>
+var app=angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+$scope.firstname="vika";
+$scope.lastname="vishnu";
+
+$scope.getvalues=function(){
+	alert("WELCOME");
+	$scope.details=true;
+	return $scope.data=$scope.firstname + $scope.lastname+$scope.gender+$scope.bloodgroup+$scope.country+$scope.cars;
+}
+});
+</script>
+
+<head>
+<title>BIODATA</title>
+</head>
+<body>
+<CENTER>
+<h1 style="color:BLACK;">BIODATA</H1></CENTER>
+<div ng-app="myApp"ng-controller="myCtrl">
+First Name:<input type="text" ng-model="firstname"><br>
+<br><br>Last Name:<input type="text"ng-model="lastname"><br>
+<br><br><br>
+ADRESS:
+<textarea name="message"rows="3"cols="20" required ng-model="message">
+</textarea>
+<BR><br>
+GENDER:
+<input type="radio"ng-model="gender"value="male">male
+<input type="radio"ng-model="gender"value="female">female
+<input type="radio"ng-model="gender"value="others">others<BR><BR>
+<BR><BR>
+BLOOD GROUP:
+
+<select ng-model="bloodgroup">
+<option value="A+">A+
+<option value="O+">O+
+<option value="B+">B+
+<option value="O-">O-
+</select>
+<BR><BR>
+COUNTRY:
+
+Select a country:
+<select ng-model="country">
+<option value="USA">USA
+<option value="VEGAS">VEGAS
+<option value="UK">UK
+<option value="ITALY">ITALY
+</select>
+<BR><BR>
+CARS
+
+Select a cars:
+<select ng-model="cars">
+<option value="AUDI">AUDI
+<option value="BMW">BMW
+<option value="COOPER">COOPER
+<option value="ASTONMARTIN">ASTONMARTIN
+</select>
+<BR><BR>
+<CENTER>
+<button type="button" ng-click="getvalues();">SUBMIT</button>
+<button ng-click="count = count + 1" ng-init="count=0">OK</button>
+
+</CENTER>
+<div ng-show="details">
+view your {{data}}
+</div>
+</div>
+</body>
+</html>
