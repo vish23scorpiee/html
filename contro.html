@@ -1,0 +1,21 @@
+<!DOCTYPE  html>
+<html>
+<script src="angular.min.js">
+</script>
+
+
+<body>
+<div ng-app="mod" ng-controller="ben">
+<p>First Name:<input type="text"  ng-model="name"  placeholder="enter your first name"></p>
+<p>Last Name:<input type="text"  ng-model="names"   placeholder="enter your last name"></p>
+<h1>name {{name}} {{names}}</h1>
+</div>
+<script>
+var app=angular.module('mod',[]);
+app.controller('ben', function($scope){
+$scope.name="";
+$scope.names="";
+});
+</script>
+</body>
+</html>
