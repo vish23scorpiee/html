@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/Priya%20PC/Downloads/vikaaaaaaa.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script language="Javascript">
+function myFunction(){
+var fname=document.form1.firstname.value;
+document.getElementById('display').innerHTML="Firstname:"+ fname;
+}
+</script>
+<style>
+input[type=text]
+{
+box-sizing:border-box;
+ background-color: #3CBC8D
+}
+input[type=radio],textarea
+{
+box-sizing:border-box;
+ background-color: #3CBC8D
+}
+input[type=submit]
+{box-sizing:border-box;
+ background-color: #3CBC8D
+}
+body
+{
+dispaly:table;
+
+background-repeat:no-repeat
+background:cover,no-repeat;
+}
+</style></head>
+
+
+<body>
+<div>
+
+
+
+<form action="file:///C:/Users/Priya%20PC/Downloads/vikaaaaaaa.html#" name="form1">
+<p id="display"></p>
+<br><label for="name">Enter Your Name:</label>
+<br><input type="text" name="firstname" autofocus=""><br>
+<br>Address:<br><textarea name="message" rows="10" cols="20"></textarea><br>
+<br><label for="Gender">Gender:</label>
+<br><input type="radio" name="gender" value="male">male<br>
+<input type="radio" name="gender" value="female">female<br>
+<input type="radio" name="gender" value="other">other<br>
+<br><label for="Country">Country:</label>
+<select name="country">
+<option value="America">America</option>
+<option value="Australia">Australia</option>
+<option value="India">India</option>
+<option value="Srilanka">Srilanka</option>
+
+<option value="Pakistan">Pakistan</option>
+</select>
+<br><br><label for="Subject">Subject:</label>
+<br><select name="Subject" size="6" multiple="">
+<option value="RMT">RMT</option>
+<option value="DS">DS</option>
+<option value="OOAD">OOAD</option>
+<option value="CGM">CGM</option>
+<option value="UID">UID</option>
+<option value="SSP">SSP</option>
+</select>
+
+
+<br><br><button type="button" onclick="myFunction();return false;"> submit</button>
+</form></div>
+
+
+</body></html>
