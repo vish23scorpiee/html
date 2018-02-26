@@ -1,0 +1,32 @@
+<!DOCTYPE  html>
+<html>
+<script src="angular.min.js"></script>.
+<script>
+var app=angular.module('mod',[]);
+app.controller('ben', function($scope){
+$scope.name="";
+$scope.names="";
+$scope.items=[];
+var item={
+fname:$scope.name,
+lname:$scope.names
+};
+
+$scope.add=function()
+{
+$scope.items.push($scope.item);
+};
+});
+</script>
+
+<body>
+<div ng-app="mod" ng-controller="ben">
+<h1 ng-repeat="x in item">{{x}}</h1>
+<p>First Name:<input type="text"  ng-model="name"  placeholder="enter your first name"></p>
+<p>Last Name:<input type="text"  ng-model="names"   placeholder="enter your last name"></p>
+<input type="button" value="add" ng-click="add()">
+<h1>name {{name}} {{names}}</h1>
+</div>
+
+</body>
+</html>
