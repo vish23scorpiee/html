@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="AJAX">
+<head>
+  <script src="angular.min.js"></script>
+  <script src="angular.route.js"></script>
+  <script>
+  angular.module("AJAX",[]),
+  controller("myctrl",function($scope,$http){
+    $scope.Insert=function(){
+      $http({
+        url:"/post",
+        data:{
+          name:$scope.name,
+          Email:$scope.Email,
+          phno:$scope.phno,
+          feedback:$scope.feedback,
+        },
+        method:"POST",
+      }),then(function(output){
+        alert(JSON.stringfy(output));
+        $scope.capital-output.capital;
+      });
+    }
+  });
+</script>
+</head>
+<body background="images/about_resume.jpg"   background-repeat: "no-repeat">
+<center>    <h1>PERSONAL DETAILS</h1></center>
+<p><font size="6"><strong>NAME</strong>   : Vishnupriya<br>
+  <strong>COURSE</strong>   : B.Tech<br>
+  <strong>DEPT</strong>   : Information Technology<br>
+<strong>HOBBIES</strong>  :
+  <ul>
+    <li>gardening</li>
+    <li>reading books</li>
+  </ul>
+  <strong>STRENGTHS</strong>
+  <ul>
+    <li>Flexibility and adaptability</li>
+    <li>work ethic</li>
+    <li>good communication skills</li>
+  </ul>
+<strong>CONTACT ME</strong><br>
+  E-Mail:<a href="">vishnupriya.1505155@srec.ac.in</a><br>
+  Linkedin:<a href="">www.linkedin.com/in/vishnupriya-srinivasan-b75a37164</a><br>
+  mobile:<a href="">8248770411</a><br>
+</font>
+</p>
+
+<center>
+<p>SHARE YOUR FEEDBACK
+  <br>
+  <div ng-controller="myctrl">
+<font size="6">
+  name:<input type="text" ng-model="name" placeholder="enter your name"><br>
+  Email:<input type="text"ng-model="Email" placeholder="enter your email"><br>
+  phno:<input type="text"ng-model="phno" placeholder="enter your contact no"><br>
+  feedback:<input type="text"ng-model="feedback" placeholder="post your feedback"><br>
+</font>
+<br>
+<button ng-click="Insert()">submit</button>
+</div>
+</center>
+</body>
+</html>
