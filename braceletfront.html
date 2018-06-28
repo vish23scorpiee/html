@@ -1,0 +1,229 @@
+<!DOCTYPE>
+<html>
+<head>
+  <script src="angular.min.js">
+  </script>
+  <style>
+  p.normal{
+    text-align: center;
+    text-transform: lowercase;
+    font-size:160%;
+    color:pink;
+    background-color:black;
+    font-style: italic;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+p.normal1{
+  text-align: center;
+  font-size:300%;
+  font-style: oblique ;
+  font-family:Comic Sans MS, cursive, sans-serif ;
+}
+#content{
+  color:black;
+  padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  text-align:  center justify;
+  font-size:150%;
+  line-height: normal;
+  font-style: italic;
+  font-family:Comic Sans MS, cursive, sans-serif ;
+}
+#content img {
+  float: right;
+  width:400px;
+  height:400px;
+  margin-right: 300px;
+  padding: 0 20px 20px 0;
+}
+#content1{
+  color:black;
+  padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  text-align: center justify;
+  line-height: normal;
+  font-size:150%;
+  font-style: italic;
+  font-family:Comic Sans MS, cursive, sans-serif ;
+}
+#content1 img {
+  float: left;
+  width:400px;
+  height:400px;
+  margin-left:210px;
+  padding: 0 20px 20px 0;
+}
+
+p.sale{
+  text-align: center;
+  border-style: ridge;
+  background-color:plum;
+  text-transform: lowercase;
+  font-size:400%;
+  color:solid violet;
+  font-style: italic;
+  font-family: Comic Sans MS, cursive, sans-serif;
+}
+.mySlides {display:none;}
+.end{
+
+}
+</style>
+</head>
+  <body>
+  <marquee>
+    <p class="normal "> DEAL OF THE WEEK! <strong> <span style='color:blue'>SHOP NOW! </strong> FREE SHIPPING ON OR ABOVE $300! ENTER THE  CODE AND GET <strong> <span style='color:blue'>FREE DELIVERY </strong></p>
+</marquee>
+    <p class="normal1">
+      <span style='color: blue'>T</span>
+      <span style='color: red'>H</span>
+      <span style='color: orange'>R</span>
+      <span style='color: aqua'>I</span>
+      <span style='color: green'>F</span>
+        <span style='color: violet'>T</span>
+        <span style='color: hotpink'>Y</span>
+      <span style='color: purple'> &nbsp T</span>
+      <span style='color: orange'>R</span>
+      <span style='color: lawngreen'>I</span>
+      <span style='color: hotpink'>N</span>
+      <span style='color: red'>K</span>
+      <span style='color: lavender'>E</span>
+      <span style='color: lawngreen'>T</span>
+      <span style='color: deeppink'>S</span></p>
+      <br>
+      <center><img src="images1/firstpic.jpg" alt="Italian Trulli" width=1500px;height=1200px;></center>
+
+<div id="content">
+  <img src="images1/bracelet2.jpg"  alt="bracelet" ><strong>BRACELETS</strong><br><p>choose a bracelet and add charms to <br> customize the bracelet of your dreams<br>it takes all the fun out of a bracelet <br>if you have to buy it yourself<br> <span style='color: cyan'>COLLECT THESE BRACELETS AND COLLECT JOY</p>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<center>
+  <div class="content section" style="max-width:500px">
+  <img class="mySlides" src="images1/acrylic.jpg" style="width:100%">
+  <img class="mySlides" src="images1/beaded.jpg" style="width:100%">
+  <img class="mySlides" src="images1/bangle.jpg" style="width:100%">
+  <img class="mySlides" src="images1/pink flower.jpg" style="width:100%">
+  <img class="mySlides" src="images1/cuff.jpg" style="width:100%">
+  <img class="mySlides" src="images1/leather.jpg" style="width:100%">
+  <img class="mySlides" src="images1/charm.jpg" style="width:100%">
+  <img class="mySlides" src="images1/rainbow.jpg" style="width:100%">
+  <img class="mySlides" src="images1/link.jpg" style="width:100%">
+  <img class="mySlides" src="images1/streched.jpg" style="width:100%">
+  <img class="mySlides" src="images1/identification.jpg" style="width:100%">
+  <img class="mySlides" src="images1/pink.jpg" style="width:100%">
+
+
+</div>
+</center>
+  <div id="content1">
+<img src="images1/emoji.jpg" alt="bracelet"><strong> EMOJI BRACELETS</strong><br><p>these bracelets with a message will <br>have her stacking,wearing & sharing<br>curlup,make yourself smaller<br>try to disappear entirely<br>get well balanced.whether its bracelet or bauble<br><span style='color: magenta'>LESS IS ALWAYS MORE </p></div>
+<br><br><br>
+<p class="sale">
+  <span style='color: blue'>everyone </span>
+  <span style='color: deeppink'>loves</span>
+  <span style='color: gold'>a </span>
+  <span style='color: springgreen'>sale</span>
+  <span style='color: red'>!</span>
+  <span style='color: navy'>!</span>
+  <span style='color: ivory'>!</span></p>
+<br>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="end"></div>
+<table border = 5 bordercolor = black align = center>
+    <th colspan = 14>BRACELETS</th>
+    <tr>
+        <th colspan = 5>Name</th>
+        <th colspan = 5>description</th>
+        <th colspan = 5>price</th>
+        <th colspan = 5>Photo</th>
+    </tr>
+    <tr>
+        <td colspan = 5>bangle bracelets</th>
+        <td colspan = 5>wrap around your wrist the best in traditional bangle sets</th>
+        <td colspan=  5>Rs 300</th>
+        <td colspan = 5><img src="images1/bangle1.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+    <tr>
+          <td colspan = 5>cuff bracelets</th>
+          <td colspan = 5>buy these charming cuff bracelets engraved with mindful messages </th>
+          <td colspan=  5>Rs 200</th>
+          <td colspan = 5><img src="images1/cuff1.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+    <tr>
+
+          <td colspan = 5>leather bracelets</th>
+          <td colspan = 5> leather bracelets are made of high quality genuine leather which makes you look cooler</th>
+          <td colspan=  5>Rs 350</th>
+          <td colspan = 5><img src="images1/leather1.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+    <tr>
+
+          <td colspan = 5>charm bracelets</th>
+          <td colspan = 5>charm bracelets carries personal charms, decorative pendants and trinkets </th>
+          <td colspan=  5>Rs 300</th>
+          <td colspan = 5><img src="images1/charm1.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+    <tr>
+
+          <td colspan = 5>beaded  bracelets</th>
+          <td colspan = 5> beaded bracelets are perfectly made with designer beads to increase your elegane</th>
+          <td colspan=  5>Rs 250</th>
+          <td colspan = 5><img src="images1/beaded1.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+    <tr>
+        <td colspan = 5>link bracelets</th>
+        <td colspan = 5>link bracelets always bring style and elegance to women which comes in variety of  link patterns</th>
+        <td colspan=  5>Rs 350</th>
+        <td colspan = 5><img src="images1/link1.jpg" alt="" border=3 height=100 width=100></img></td>
+</tr>
+<tr>
+            <td colspan = 5>strechable bracelets</th>
+            <td colspan = 5>strechable bracelets are made with good quality elastic cord which adds a grace to your attitude</th>
+            <td colspan=  5>Rs 100</th>
+            <td colspan = 5><img src="images1/strechable1.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+    <tr>
+
+          <td colspan = 5>identification bracelets</th>
+          <td colspan = 5> check out our wonderful collection of ID bracelets</th>
+          <td colspan=  5>Rs 285</th>
+          <td colspan = 5><img src="images1/identification.jpg" alt="" border=3 height=100 width=100></img></td>
+    </tr>
+</table>
+<br><br>
+
+<br><br>
+<center>
+<form>
+  enter the type:
+  <input type="text" placeholder="bracelet type">
+  <br><br><br>
+  enter the price:
+  <input type="text" placeholder="bracelet prize">
+<br><br><br>  <button>display</button>
+</center>
+</form>
+<center>
+<img src="images1/footer.jpg" alt="Italian Trulli">
+</center>
+</body>
+</html>
